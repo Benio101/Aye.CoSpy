@@ -110,7 +110,7 @@ Aye.modules.CoSpy.events.CHAT_MSG_PARTY_ALL = function(message)
 	end;
 	
 	-- Belt
-	if string.lower(message or "") == "potion" then
+	if string.lower(message or "") == "potions" then
 		Aye.modules.CoSpy.CoS_Spy_clues.Belt = "Belt: |cff40ff40Potions|r";
 		if Aye.modules.CoSpy.CoS_Spy then Aye.modules.CoSpy.CoS_Spy["icon5"].title.txt:SetText(Aye.modules.CoSpy.CoS_Spy_clues.Belt) end;
 	end;
