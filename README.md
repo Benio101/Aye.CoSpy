@@ -1,15 +1,16 @@
 # Aye.CoSpy
 
-*Aye.CoSpy* is a small addon, that helps in **Court of Start** dungeon's spy trash aka "clue" minigame, showing certain parts of Suspicious Nobles in handy GUI frames, so it's easier to judge if it's a demon, or not.
+**Aye.CoSpy** is a small addon, that helps in **Court of Start** dungeon's spy trash aka "clue" minigame.
+**Aye.CoSpy** shows certain gear parts of Suspicious Nobles in handy GUI frames, so it's easier to judge if it's a demon, or not.
 
 ![](http://benio.me/pub/res/img/wow/addons/Aye.CoSpy.png)
 
 ## Options
-Aye.AutoOK provides no options at all. Just install and it's ready!
+Aye.CoSpy provides no options at all. Just install and it's ready!
 
 ## Usage
-Target *Suspicious Noble* in *The Jeweled Estate* (inside *Court of Stars*) to show handy GUI frames **(as shown above)**.
-GUI frames will always open 200px right of the centre of screen, and will be available only while you target *Suspicious Noble*.
+Target **Suspicious Noble** in **The Jeweled Estate** (inside **Court of Stars**) to show handy GUI frames *(as shown above)*.
+GUI frames will always open 200px right of the centre of screen, and will be available only while you target **Suspicious Noble**.
 
 ## Intergation
 Aye.CoSpy reads clues from party/instance chat.
