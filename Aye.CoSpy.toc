@@ -1,0 +1,14 @@
+## Title: Aye.CoSpy
+## Notes: CoSpy
+## Depot: Aye
+## LoadOnDemand: 1
+## Author: Benio
+## Version: 1.0.0
+## Interface: 70200
+
+#files
+Aye.CoSpy.lua
+
+#core
+core/config.lua
+core/clues.lua
