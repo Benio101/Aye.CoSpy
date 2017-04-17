@@ -13,8 +13,8 @@ Target **Suspicious Noble** in **The Jeweled Estate** (inside **Court of Stars**
 GUI frames will always open 200px right of the centre of screen, and will be available only while you target **Suspicious Noble**.
 
 ## Intergation
-Aye.CoSpy reads clues from party/instance chat.
-Aye.CoSpy is also fully intergated with DBM.
+Aye.CoSpy reads clues from party, instance, and say chat.
+Aye.CoSpy is also fully intergated with [DBM](https://mods.curse.com/addons/wow/deadly-boss-mods) and [Angry Keystones](https://mods.curse.com/addons/wow/angry-keystones).
 
 ## Depot
 This addon uses [Aye](https://github.com/Benio101/Aye) as depot.
