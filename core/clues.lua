@@ -68,21 +68,33 @@ Aye.modules.CoSpy.events.CHAT_MSG_PARTY_ALL = function(message)
 	message = string.lower(message or "");
 	
 	-- Sex
-	if message == "male" then
+	if
+			message == "male"
+		or	message == "[littlewigs] male" -- LittleWigs
+	then
 		Aye.modules.CoSpy.CoS_Spy_clues.Sex = "Sex: |cff80b0ffMale|r";
 		if Aye.modules.CoSpy.CoS_Spy then Aye.modules.CoSpy.CoS_Spy.sexKnown.txt:SetText(Aye.modules.CoSpy.CoS_Spy_clues.Sex) end;
 	end;
-	if message == "female" then
+	if
+			message == "female"
+		or	message == "[littlewigs] female" -- LittleWigs
+	then
 		Aye.modules.CoSpy.CoS_Spy_clues.Sex = "Sex: |cffff8080Female|r";
 		if Aye.modules.CoSpy.CoS_Spy then Aye.modules.CoSpy.CoS_Spy.sexKnown.txt:SetText(Aye.modules.CoSpy.CoS_Spy_clues.Sex) end;
 	end;
 	
 	-- Vest
-	if message == "light vest" then
+	if
+			message == "light vest"
+		or	message == "[littlewigs] light vest" -- LittleWigs
+	then
 		Aye.modules.CoSpy.CoS_Spy_clues.Vest = "Vest: |cffffff00Light|r";
 		if Aye.modules.CoSpy.CoS_Spy then Aye.modules.CoSpy.CoS_Spy["icon1"].title.txt:SetText(Aye.modules.CoSpy.CoS_Spy_clues.Vest) end;
 	end;
-	if message == "dark vest" then
+	if
+			message == "dark vest"
+		or	message == "[littlewigs] dark vest" -- LittleWigs
+	then
 		Aye.modules.CoSpy.CoS_Spy_clues.Vest = "Vest: |cffff8000Dark|r";
 		if Aye.modules.CoSpy.CoS_Spy then Aye.modules.CoSpy.CoS_Spy["icon1"].title.txt:SetText(Aye.modules.CoSpy.CoS_Spy_clues.Vest) end;
 	end;
@@ -91,6 +103,7 @@ Aye.modules.CoSpy.events.CHAT_MSG_PARTY_ALL = function(message)
 	if
 			message == "cape" -- DBM
 		or	message == "cloak" -- Angry Keystones
+		or	message == "[littlewigs] cape" -- LittleWigs
 	then
 		Aye.modules.CoSpy.CoS_Spy_clues.Cloak = "Cloak: |cff40ff40Yes|r";
 		if Aye.modules.CoSpy.CoS_Spy then Aye.modules.CoSpy.CoS_Spy["icon2"].title.txt:SetText(Aye.modules.CoSpy.CoS_Spy_clues.Cloak) end;
@@ -98,27 +111,40 @@ Aye.modules.CoSpy.events.CHAT_MSG_PARTY_ALL = function(message)
 	if
 			message == "no cape" -- DBM
 		or	message == "no cloak" -- Angry Keystones
+		or	message == "[littlewigs] no cape" -- LittleWigs
 	then
 		Aye.modules.CoSpy.CoS_Spy_clues.Cloak = "Cloak: |cffff4040No|r";
 		if Aye.modules.CoSpy.CoS_Spy then Aye.modules.CoSpy.CoS_Spy["icon2"].title.txt:SetText(Aye.modules.CoSpy.CoS_Spy_clues.Cloak) end;
 	end;
 	
 	-- Sleeves
-	if message == "short sleeves" then
+	if
+			message == "short sleeves"
+		or	message == "[littlewigs] short sleeves" -- LittleWigs
+	then
 		Aye.modules.CoSpy.CoS_Spy_clues.Sleeves = "Sleeves: |cffffff00Short|r";
 		if Aye.modules.CoSpy.CoS_Spy then Aye.modules.CoSpy.CoS_Spy["icon3"].title.txt:SetText(Aye.modules.CoSpy.CoS_Spy_clues.Sleeves) end;
 	end;
-	if message == "long sleeves" then
+	if
+			message == "long sleeves"
+		or	message == "[littlewigs] long sleeves" -- LittleWigs
+	then
 		Aye.modules.CoSpy.CoS_Spy_clues.Sleeves = "Sleeves: |cffff8000Long|r";
 		if Aye.modules.CoSpy.CoS_Spy then Aye.modules.CoSpy.CoS_Spy["icon3"].title.txt:SetText(Aye.modules.CoSpy.CoS_Spy_clues.Sleeves) end;
 	end;
 	
 	-- Gloves
-	if message == "gloves" then
+	if
+			message == "gloves"
+		or	message == "[littlewigs] gloves" -- LittleWigs
+	then
 		Aye.modules.CoSpy.CoS_Spy_clues.Gloves = "Gloves: |cff40ff40Yes|r";
 		if Aye.modules.CoSpy.CoS_Spy then Aye.modules.CoSpy.CoS_Spy["icon4"].title.txt:SetText(Aye.modules.CoSpy.CoS_Spy_clues.Gloves) end;
 	end;
-	if message == "no gloves" then
+	if
+			message == "no gloves"
+		or	message == "[littlewigs] no gloves" -- LittleWigs
+	then
 		Aye.modules.CoSpy.CoS_Spy_clues.Gloves = "Gloves: |cffff4040No|r";
 		if Aye.modules.CoSpy.CoS_Spy then Aye.modules.CoSpy.CoS_Spy["icon4"].title.txt:SetText(Aye.modules.CoSpy.CoS_Spy_clues.Gloves) end;
 	end;
@@ -127,6 +153,7 @@ Aye.modules.CoSpy.events.CHAT_MSG_PARTY_ALL = function(message)
 	if
 			message == "potions" -- DBM
 		or	message == "potion" -- Angry Keystones
+		or	message == "[littlewigs] potions" -- LittleWigs
 	then
 		Aye.modules.CoSpy.CoS_Spy_clues.Belt = "Belt: |cff40ff40Potions|r";
 		if Aye.modules.CoSpy.CoS_Spy then Aye.modules.CoSpy.CoS_Spy["icon5"].title.txt:SetText(Aye.modules.CoSpy.CoS_Spy_clues.Belt) end;
@@ -134,16 +161,23 @@ Aye.modules.CoSpy.events.CHAT_MSG_PARTY_ALL = function(message)
 	if
 			message == "pouch" -- DBM
 		or	message == "coinpurse" -- Angry Keystones
+		or	message == "[littlewigs] pouch" -- LittleWigs
 	then
 		Aye.modules.CoSpy.CoS_Spy_clues.Belt = "Belt: |cffffff00Coin Purse|r";
 		if Aye.modules.CoSpy.CoS_Spy then Aye.modules.CoSpy.CoS_Spy["icon5"].title.txt:SetText(Aye.modules.CoSpy.CoS_Spy_clues.Belt) end;
 	end;
-	if message == "book" then
+	if
+			message == "book"
+		or	message == "[littlewigs] book" -- LittleWigs
+	then
 		Aye.modules.CoSpy.CoS_Spy_clues.Belt = "Belt: |cff80b0ffBook|r";
 		if Aye.modules.CoSpy.CoS_Spy then Aye.modules.CoSpy.CoS_Spy["icon5"].title.txt:SetText(Aye.modules.CoSpy.CoS_Spy_clues.Belt) end;
 	end;
-	if message == "no potion" then
-		Aye.modules.CoSpy.CoS_Spy_clues.Belt = "Belt: |cffff4040Empty|r";
+	if
+			message == "no potion"
+		or	message == "[littlewigs] no potions" -- LittleWigs
+	then
+		Aye.modules.CoSpy.CoS_Spy_clues.Belt = "Belt: |cffff4040No Potions|r";
 		if Aye.modules.CoSpy.CoS_Spy then Aye.modules.CoSpy.CoS_Spy["icon5"].title.txt:SetText(Aye.modules.CoSpy.CoS_Spy_clues.Belt) end;
 	end;
 end;
