@@ -121,7 +121,7 @@ Aye.modules.CoSpy.events.PLAYER_TARGET_CHANGED = function()
 		
 		Aye.modules.CoSpy.CoS_Spy:Show();
 		Aye.modules.CoSpy.CoS_Spy.sex:Show();
-		Aye.modules.CoSpy.CoS_Spy.sex.txt:SetText("Sex: " ..SexText(UnitSex("target"), true));
+		Aye.modules.CoSpy.CoS_Spy.sex.txt:SetText("Target Sex: " ..SexText(UnitSex("target"), true));
 		Aye.modules.CoSpy.CoS_Spy.sex.txt:Show();
 		Aye.modules.CoSpy.CoS_Spy.sexKnown.txt:SetText(Aye.modules.CoSpy.CoS_Spy_clues.Sex);
 		
